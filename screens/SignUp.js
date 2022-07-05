@@ -13,7 +13,7 @@ import COLORS from "../components/colors";
 
 
 
-function SignUp() {
+function SignUp({navigation}) {
 
   // State Variables
   const [username, setUsername]=useState('')
@@ -24,7 +24,6 @@ function SignUp() {
   const [signup, setSignup] =useState('false')
 
 
-  
 
   
 
@@ -47,7 +46,8 @@ function SignUp() {
              initialValues={{ username:'', email: '', password: '', phone_no:'', city:'' }}
              onSubmit={
               (values) => {
-             console.log(values)
+            //  console.log(values)
+              navigation.navigate('LoginScreen')
           
              }}
             

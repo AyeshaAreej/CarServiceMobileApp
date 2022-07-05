@@ -6786,10 +6786,10 @@
   "resolved" "https://registry.npmjs.org/react-native-date-picker/-/react-native-date-picker-4.2.2.tgz"
   "version" "4.2.2"
 
-"react-native-gesture-handler@>= 1.0.0":
-  "integrity" "sha512-djZdcprFf08PZC332D+AeG5wcGeAPhzfCJtB3otUgOgTlvjVXmg/SLFdPJSpzLBqkRAmrC77tM79QgKbuLxkfw=="
-  "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.5.0.tgz"
-  "version" "2.5.0"
+"react-native-gesture-handler@>= 1.0.0", "react-native-gesture-handler@~2.2.1":
+  "integrity" "sha512-P4kAPbSY8VFAjvFNzfePgFsbZEldfEnEfNqOJw6MlpcdXrPGwRbvMqWMVkA9lifdKTZ3XifvAgJ8+R+uEZN0zA=="
+  "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.2.1.tgz"
+  "version" "2.2.1"
   dependencies:
     "@egjs/hammerjs" "^2.0.17"
     "hoist-non-react-statics" "^3.3.0"
@@ -6822,7 +6822,7 @@
   dependencies:
     "ramda" "^0.27.0"
 
-"react-native-reanimated@>= 1.0.0":
+"react-native-reanimated@^2.9.1", "react-native-reanimated@>= 1.0.0":
   "integrity" "sha512-309SIhDBwY4F1n6e5Mr5D1uPZm2ESIcmZsGXHUu8hpKX4oIOlZj2MilTk+kHhi05LjChoJkcpfkstotCJmPRPg=="
   "resolved" "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-2.9.1.tgz"
   "version" "2.9.1"
@@ -6848,10 +6848,10 @@
   dependencies:
     "hoist-non-react-statics" "^2.3.1"
 
-"react-native-screens@^3.14.1", "react-native-screens@>= 3.0.0":
-  "integrity" "sha512-QkaiYEx5kuAkLjfN+AmR7FC9jyzohqnc5T1PBi35oZtGiLMoyTJIzyep/g8458++WvDwm0vismIifaNHsWFyHg=="
-  "resolved" "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.14.1.tgz"
-  "version" "3.14.1"
+"react-native-screens@>= 3.0.0", "react-native-screens@~3.11.1":
+  "integrity" "sha512-ziQqVm97tNtovacyHwNmDwJPb8n9CqwsfttXx2p5Hk7wUWemDcPAX0ZJ/nNnGMSq2p2QPhPjjUpr3qKXuES0sQ=="
+  "resolved" "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.11.1.tgz"
+  "version" "3.11.1"
   dependencies:
     "react-freeze" "^1.0.0"
     "warn-once" "^0.1.0"

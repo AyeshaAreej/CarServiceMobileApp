@@ -1,23 +1,23 @@
 import React from "react";
 import {useState,useEffect}  from 'react'
-import { ImageBackground, Button, TextInput, Platform,Alert,ScrollView, StyleSheet, View, Image, Text } from "react-native";
-import { StatusBar } from "react-native-web";
+import { ImageBackground,StyleSheet, View, Image, Text } from "react-native";
+import {  User_Home } from "../constants";
 import COLORS from "../components/colors";
+import WelcomeScreen from "./WelcomeScreen";
 
 
 
-
-function SplashScreen() {
+function SplashScreen({navigation}) {
 
 
 useEffect(()=>{
  setTimeout(()=>{
   console.log('alert');
 
-  // const result=await fetch()
+ 
 
-//  navigation.navigate(Company_Home)
-// navigation.navigate(WelcomeScreen)
+ navigation.navigate('WelcomeScreen')
+
  },5000);
 },[]);
 

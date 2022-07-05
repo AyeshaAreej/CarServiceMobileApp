@@ -1,7 +1,7 @@
 import React from "react";
 import {useState}  from 'react'
 import { ImageBackground, Button, TextInput, Platform,ScrollView, StyleSheet, View, Image, Text } from "react-native";
-import {  User_Home } from "../constants";
+// import { Company_Home, User_Home, Admin_Home,Vendor_Home } from "../constants";
 
 // import { StatusBar } from "react-native-web";
 import COLORS, { colors } from "../components/colors";
@@ -15,26 +15,14 @@ import {GoogleSocialButton } from "react-native-social-buttons";
 
 
 
-function LoginScreen({navigation}) {
+function Home({navigate}) {
 
   // State Variables
   const [email, setEmail]=useState('')
   const [password, setPassword]=useState('')
   const [signup, setSignup] =useState('false')
 
-  function handleLogin(values){
-
-    const role='user'
-    if(role=='user'){
-      navigation.navigate(User_Home)
-    }
- 
-    else{
-      console.log('no role')
-    }
-    
-   
-  }
+  
   return (
     
    <View style={{flex:1, backgroundColor:COLORS.primary}} >
@@ -55,7 +43,7 @@ function LoginScreen({navigation}) {
       onSubmit={
         (values) => {
           console.log(values)
-          handleLogin(values)
+          // handleLogin(values)
           }}
           validationSchema={yup.object().shape({
             email: yup
@@ -65,7 +53,7 @@ function LoginScreen({navigation}) {
           password: yup
             .string()
             .min(5, 'More than 5 characters are needed.')
-            .max(11, 'More than 12 characters are not allowed.')
+            .max(11, 'More than 12 characters are allowed.')
             .required(),
           })}
 
@@ -190,4 +178,4 @@ center:{
 
 });
 
-export default LoginScreen;
+export default Home;

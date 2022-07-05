@@ -1,7 +1,6 @@
 import { View, Text, ImageBackground,Image, TouchableOpacity} from 'react-native'
 import React from 'react'
 import { DrawerContentScrollView, DrawerItemList} from '@react-navigation/drawer'
-import { DrawerActions } from '@react-navigation/native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 

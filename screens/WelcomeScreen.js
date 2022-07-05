@@ -6,7 +6,7 @@ import COLORS from "../components/colors";
 
 
 
-function WelcomeScreen() {
+function WelcomeScreen({navigation}) {
 
 
   return (
@@ -33,7 +33,7 @@ function WelcomeScreen() {
     <View style={styles.container}>
       <View style={styles.button}>
       <Button 
-      // onPress={()=>navigation.navigate('LoginScreen')}
+      onPress={()=>navigation.navigate('LoginScreen')}
        title="SignIn"
         color={COLORS.grey}
       /> 
@@ -42,7 +42,7 @@ function WelcomeScreen() {
       <View style={styles.button} >
       <Button
       
-      //  onPress={()=>navigation.navigate('SignUp')} 
+       onPress={()=>navigation.navigate('SignUp')} 
       title="SignUp"
       color={COLORS.grey}
         
