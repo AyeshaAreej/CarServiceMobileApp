@@ -1,7 +1,8 @@
 import { View, Text } from 'react-native'
+import COLORS from './components/colors';
 import React from 'react'
 import Home from './screens/Home';
-// import Profile from './screens/Profile';
+ import Profile from './screens/Profile';
 import Location from './screens/Location';
 import Message from './screens/Message';
 import PaymentMethod from './screens/PaymentMethod';
@@ -19,7 +20,7 @@ const UserStack = () => {
     <Drawer.Navigator 
     drawerContent={props=><CustomDrawer {...props} /> } 
     screenOptions={{
-      drawerActiveBackgroundColor:'purple',
+      drawerActiveBackgroundColor:COLORS.primary,
       drawerActiveTintColor:'white',
       drawerInactiveTintColor:'#333'
     }}
@@ -30,52 +31,33 @@ const UserStack = () => {
                 <Icon
                 name='home'
                 size={size}
-                color={focused? 'white' : 'purple'}
+                color={focused? 'white' : COLORS.primary}
                 />
               ),
             }}
             
           />
-          {/* <Drawer.Screen name=' Profile' component={Profile}
+          <Drawer.Screen name=' Profile' component={Profile}
               options={{
                 drawerIcon:({focused,size})=>(
                   <Icon
                   name='user'
                   size={size}
-                  color={focused? 'white' : 'purple'}
+                  color={focused? 'white' : COLORS.primary}
                   />
                 ),
               }}
           />
-          <Drawer.Screen name='My Orders' component={MyOrders} 
-              options={{
-                drawerIcon:({focused,size})=>(
-                  <Icon
-                  name='shopping-cart'
-                  size={size}
-                  color={focused? 'white' : 'purple'}
-                  />
-                ),
-              }}
-          />  */}
-          {/* <Drawer.Screen name='Notifications' component={Notifications} 
-                  options={{
-                    drawerIcon:({focused,size})=>(
-                      <Icon
-                      name='bell'
-                      size={size}
-                      color={focused? 'white' : 'purple'}
-                      />
-                    ),
-                  }}
-                  /> */}
+        
+            
+          
           <Drawer.Screen name='   Location' component={Location} 
               options={{
                 drawerIcon:({focused,size})=>(
                   <Icon
                   name='map-marker'
                   size={size}
-                  color={focused? 'white' : 'purple'}
+                  color={focused? 'white' : COLORS.primary}
                   />
                 ),
               }}
@@ -86,7 +68,7 @@ const UserStack = () => {
                     <Icon
                     name='comment'
                     size={size}
-                    color={focused? 'white' : 'purple'}
+                    color={focused? 'white' : COLORS.primary}
                     />
                   ),
                 }}
@@ -97,7 +79,7 @@ const UserStack = () => {
                       <Icon
                       name='cc-visa'
                       size={size}
-                      color={focused? 'white' : 'purple'}
+                      color={focused? 'white' : COLORS.primary}
                       />
                     ),
                   }}

@@ -13,7 +13,7 @@ const CustomDrawer = (props) => {
                             <ImageBackground source={require('../assets/bg.jpg')} style={{padding:20}}>
                                 <Image source={require('../assets/profile.jpg')} 
                                 style={{height:80, width:80,borderRadius:40, marginBottom:10}}/>
-                                <Text style={{color:'#fff',fontSize:18,fontFamily:'Roboto-Medium'}}>Ayesha Areej</Text>
+                                <Text style={{color:'#fff',fontSize:18,fontFamily:'Roboto-Medium'}}>User</Text>
                             </ImageBackground>
 
                             <View style={{flex:1, backgroundColor:'#fff', paddingTop: 10}}>
